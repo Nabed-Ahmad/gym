@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym project</title>
+</head>
+<!-- for social media logo -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+<!-- font adding by google font -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+    body {
+        font-family: "zen dots", cursive;
+    }
+</style>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* navigation styling */
+    section {
+        position: sticky;
+        z-index: 5;
+        top: 0;
+    }
+
+    .nav {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        z-index: 30;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav li {
+
+        list-style-type: none;
+        padding: 20px;
+        font-size: 34px;
+
+        color: white;
+    }
+
+    .nav li a:hover {
+        color: green;
+    }
+
+    .bc img {
+        width: 99vw;
+        margin: 0px;
+        margin-bottom: -4px;
+    }
+
+    /* top right corner gym logo positioning */
+    .logo img {
+        height: 40px;
+        position: absolute;
+        top: 17px;
+        left: 31px;
+        filter: invert(100%);
+    }
+
+    /* top right corner buttons style */
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .right .btn {
+        border: 2px solid green;
+        font-size: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 3px 12px;
+        margin: 0px 5px;
+    }
+
+    .right .btn:hover {
+        background-color: green;
+    }
+
+    /* form container positioning */
+    .form_bc {
+        background-color: #c8e4e5;
+        margin: 4px 0px;
+        background-image: url("cutbg.jpg");
+        background-size:65%;
+        background-repeat: repeat-x;
+        
+    }
+
+    .form input {
+        display: block;
+        text-align: center;
+        border: 2px solid rgb(80, 49, 49);
+        width: 427px;
+        margin: 3px auto;
+        padding: 9px 4px;
+        border-radius: 12px;
+        font-size: 23px;
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: -4px 459px;
+        padding: 88px 56px;
+        border-radius: 20px;
+        width: 33%;
+        padding-bottom: 47px;
+    }
+
+    .container h1 {
+        color: #77ff81d6;
+    }
+
+    .container .btn {
+        display: block;
+        border: 2px solid rgb(30 78 40);
+        margin: 8px auto;
+        background-color: green;
+        border-radius: 27px;
+        font-size: 26px;
+        padding: 3px 20px;
+
+    }
+
+    /* footer styling is start from here */
+    footer {
+        background-color: grey;
+        color: white;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+
+    footer h2 {
+        padding: auto;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    footer h4 {
+        margin: 0;
+    }
+
+    .social {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: rgb(193 184 184 / 64%);
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .social h5,
+    .social p {
+        color: white;
+        padding: 16px 2px;
+
+    }
+
+    .social:hover {
+        background-color: greenyellow;
+        color: rgb(233, 96, 100);
+    }
+</style>
+
+<body>
+    <section class="header">
+        
+            <ul class="nav">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        
+
+        <div class="logo">
+            <img src="gym logo.jpg" alt="logo">
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </section>
+    <div class="bc">
+        <img src="https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_960_720.jpg" alt="bc image">
+    </div>
+    <div class="form_bc">
+        <div class="container">
+            <h1>Join The Best GYM of Bilaspur</h1>
+            <form action="noaction.php">
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your age">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your gender">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your locality">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your phone no.">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Enter your @email id">
+                </div>
+                <button class="btn">submit</button>
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h2>copyright &copy Alright reserve</h2>
+        <h4>Social Media links</h4>
+        <br>
+        <div class="main-social-icon">
+            <a class="social" href="#"><i class="fab fa-facebook-f"></i>
+                <h5>156k</h5>
+                <p>followers</p>
+            </a>
+            <a class="social" href="#"><i class="fab fa-twitter"></i>
+                <h5>95k</h5>
+                <p>followers</p>
+            </a>
+            <a class="social" href="#"><i class="fab fa-instagram"></i>
+                <h5>103k</h5>
+                <p>followers</p>
+            </a>
+            <a class="social" href="#"><i class="fab fa-youtube"></i>
+                <h5>185k</h5>
+                <p>subscribers</p>
+            </a>
+            <!-- <a class="social" href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
+
+        </div>
+    </footer>
+</body>
+
+</html>
